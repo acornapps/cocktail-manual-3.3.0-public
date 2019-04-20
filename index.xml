@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>칵테일 클라우드</title>
-    <link>http://acornapps.github.io/</link>
+    <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/</link>
     <description>Recent content on 칵테일 클라우드</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kr-ko</language>
@@ -10,15 +10,15 @@
     <webMaster>cloud.jung@acornsoft.io (cloud.jung)</webMaster>
     <lastBuildDate>Fri, 19 Apr 2019 10:41:01 +0900</lastBuildDate>
     
-	<atom:link href="http://acornapps.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://acornapps.github.io/cocktail-manual-3.3.0-public/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cocktail Cloud 구성 개요</title>
-      <link>http://acornapps.github.io/1.intro/0.1/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.1/</link>
       <pubDate>Fri, 19 Apr 2019 10:41:01 +0900</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/1.intro/0.1/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.1/</guid>
       <description>Cocktail Cloud는 그 역할에 따라 5개의 레이어로 구성된다.
  Cluster Management Layer: 컨테이너가 배포/실행되는 인프라(클러스터)와 오케스트레이션(Orchestration)을 담당하는 레이어다. 오케스트레이션은 Kubernetes(https://kubernetes.io)가 담당하고 인프라 관리, 모니터링 등 확장 관리 기능을 제공한다.
  Service Management Layer: 서비스(Workload)를 기준으로 컨테이너 구성과 관리를 담당하는 레이어다. 서비스를 구성하는 다수의 컨테이너와 관련 객체를 패키징하고 그 수명주기와 모니터링을 관리한다.
@@ -27,10 +27,10 @@
     
     <item>
       <title>Cluster Management Layer (클러스터 관리 레이어)</title>
-      <link>http://acornapps.github.io/1.intro/0.2/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.2/</link>
       <pubDate>Fri, 19 Apr 2019 10:41:01 +0900</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/1.intro/0.2/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.2/</guid>
       <description>클러스터 관리 레이어는 클러스터를 구성하는 인프라 스트럭처와 컨테이너 오케스트레이션 엔진 부분으로 구분된다. 상세 구성은 아래 그림과 같다.
 Cocktail Cloud는 클러스터 인프라와 오케스트레이션 엔진을 사용자의 설정에 따라 자동 프로비져닝(Provisioning)하는데 이를 담당하는 도구가CUBE이다. CUBE는 고가용(High Availability, HA)의 Kubernetes클러스터를 구성한다. CUBE가 프로비져닝하는 클러스터 구성은 높은 안정성과 보안, 확장성을 제공한다.(이를 CUBE클러스터라 한다.)
 CUBE클러스터는 현재 다음과 같은 클라우드 플랫폼 및 공급자를 지원한다. 하지만 CUBE는 인프라에 독립적인 구성이 가능함으로 어떠한 인프라에서도 구성이 가능하다. 아래는 인프라 자동 프로비져닝을 기준으로 한 것이다.</description>
@@ -38,10 +38,10 @@ CUBE클러스터는 현재 다음과 같은 클라우드 플랫폼 및 공급자
     
     <item>
       <title>Service Management Layer (서비스 관리 레이어)</title>
-      <link>http://acornapps.github.io/1.intro/0.3/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.3/</link>
       <pubDate>Fri, 19 Apr 2019 10:41:01 +0900</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/1.intro/0.3/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.3/</guid>
       <description>일반적으로 하나의 어플리케이션 및 서비스는 다수의 컨테이너로 구성된다. 특히 Kubernetes와 같은 오케스트레이션 엔진의 경우 컨테이너 외에도 서비스 포트, 컨트롤러, 볼륨등의 추가적인 객체를 필요로 한다. 따라서 컨테이너 기반의 어플리케이션 및 서비스를 관리하기 위해서는 컨테이너와 관련 객체를 패키징하고 관리하는 추상화 단위가 필요하다. 서비스 관리 레이어는 이를 담당하는 레이어다.
 Cocktail Cloud의 서비스 관리는 다음과 같은 계층 구조를 가진다.
  Service : 최상위 계층으로 서비스에 필요한 클러스터 자원, 이미지 레지스트리, 이미지 빌드를 할당 관리하는 그룹이다.</description>
@@ -49,10 +49,10 @@ Cocktail Cloud의 서비스 관리는 다음과 같은 계층 구조를 가진�
     
     <item>
       <title>Pipeline Layer (파이프라인 레이어)</title>
-      <link>http://acornapps.github.io/1.intro/0.4/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.4/</link>
       <pubDate>Fri, 19 Apr 2019 10:41:01 +0900</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/1.intro/0.4/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.4/</guid>
       <description>파이프라인 레이어는 코드로부터 컨테이너 빌드와 배포를 자동화 한다.
 Build는 코드 다운로드, 코드 빌드 및 테스트등 작업(Task), 컨테이너 이미지 빌드를 사용자 설정을 기준으로 순차적으로 수행한다. 작업(Task)은 내부에서 작업을 수행하는 컨테이너를 사용하는데, 기본 제공되는 컨테이너 외에도 공개 또는 사용자가 만든 컨테이너를 사용하여 확장 할 수 있다.
 빌드 된 이미지는 Cocktail Cloud 서버의 컨테이너로 롤링 업데이트 한다. 빌드를 통해 만들어진 이미지는 자동 빌드 번호가 부여 되는데 이를 통해 최신 버전 또는 롤백을 수행한다.</description>
@@ -60,10 +60,10 @@ Build는 코드 다운로드, 코드 빌드 및 테스트등 작업(Task), 컨�
     
     <item>
       <title>Catalog Layer (카탈로그 레이어)</title>
-      <link>http://acornapps.github.io/1.intro/0.5/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.5/</link>
       <pubDate>Fri, 19 Apr 2019 10:41:01 +0900</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/1.intro/0.5/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.5/</guid>
       <description>컨테이너는 그 구성을 이미지화하여 배포 실행한다. 따라서 자주 사용하는 DB나 미들웨어 등의 런타임은 컨테이너 이미지와 배포 정보를 템플릿화 하면 반복적인 작업을 줄이고 언제든 필요할 때 쉽게 배포하여 사용 할 수 있다.
 이러한 템플릿을 생성하고 관리를 담당하는 레이어가 카탈로그다. 카탈로그 레이어의 구성을 도식화하면 아래와 같다.
 카탈로그는 목적에 따라 두 가지 형태로 구분 된다.
@@ -72,10 +72,10 @@ Build는 코드 다운로드, 코드 빌드 및 테스트등 작업(Task), 컨�
     
     <item>
       <title>Dashboard Layer (대시보드 레이어)</title>
-      <link>http://acornapps.github.io/1.intro/0.6/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.6/</link>
       <pubDate>Fri, 19 Apr 2019 10:41:01 +0900</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/1.intro/0.6/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.6/</guid>
       <description>Cocktail Cloud의 대시보드 레이어는 서비스 현황, 모니터링, 클러스터 현황 등을 웹UI형태로 제공한다.
 대시보드는 사용자의 역할에 맞는 뷰를 권한에 따라 제공한다. Cocktail Cloud의 사용자 권한은 다음과 같다.
  Administrator(Admin) : 클러스터 관리를 수행하고, Cocktail Cloud의 모든 서비스에 대해 관리 권한을 가진다.
@@ -86,10 +86,10 @@ Build는 코드 다운로드, 코드 빌드 및 테스트등 작업(Task), 컨�
     
     <item>
       <title>2.1.1 시스템 편집</title>
-      <link>http://acornapps.github.io/2.system-management/2.1.system/2.1.1-edit/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.1-edit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.1.system/2.1.1-edit/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.1-edit/</guid>
       <description> 시스템 이용에 필요한 시스템 정보, 계정 정보를 수정 할 수 있다.
 a) 좌측 메인메뉴 → 시스템 → 우측 상단 편집 버튼 시스템 정보(기본 언어, 시스템 로고, 시스템 설명)와 계정 정보(조직명, 계정 담당자 명, 계정 담당자 이메일, 주소)를 수정 할 수 있다.
 b) 좌측 메인메뉴 → 시스템 → 편집 → 수정완료 후 수정버튼을 클릭한다. </description>
@@ -97,80 +97,80 @@ b) 좌측 메인메뉴 → 시스템 → 편집 → 수정완료 후 수정버�
     
     <item>
       <title>2.1.2 클라우드 미터링 계정 등록</title>
-      <link>http://acornapps.github.io/2.system-management/2.1.system/2.1.2-meteringadd/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.2-meteringadd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.1.system/2.1.2-meteringadd/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.2-meteringadd/</guid>
       <description>클라우드 미터링 계정 등록 할 수 있다.
 a) 좌측 메인메뉴 → 시스템 → 계정 등록  Amazon Web Service  Google Cloud Plalform   </description>
     </item>
     
     <item>
       <title>2.1.3 클라우드 미터링 계정 편집</title>
-      <link>http://acornapps.github.io/2.system-management/2.1.system/2.1.3-meteringedit/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.3-meteringedit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.1.system/2.1.3-meteringedit/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.3-meteringedit/</guid>
       <description>클라우드 미터링 계정 편집 할 수 있다.
 a) 좌측 메인메뉴 → 시스템 → 계정 액션 메뉴 → 계정 편집 → 수정완료 후 수정버튼을 클릭한다. </description>
     </item>
     
     <item>
       <title>2.1.4 클라우드 미터링 계정 삭제</title>
-      <link>http://acornapps.github.io/2.system-management/2.1.system/2.1.4-meteringdelete/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.4-meteringdelete/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.1.system/2.1.4-meteringdelete/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.4-meteringdelete/</guid>
       <description>클라우드 미터링 계정을 삭제 할 수 있다.
 a) 좌측 메인메뉴 → 시스템 → 계정 액션 메뉴 → 계정 삭제 </description>
     </item>
     
     <item>
       <title>2.1.5 시스템 사용자 추가</title>
-      <link>http://acornapps.github.io/2.system-management/2.1.system/2.1.5-useradd/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.5-useradd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.1.system/2.1.5-useradd/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.5-useradd/</guid>
       <description>시스템 사용자를 추가 하는 기능이다.
 a) 좌측 메인메뉴 → 시스템 → 사용자 추가를 클릭한다.    시스템 사용자 설명     이름 시스템 사용자 이름   아이디 칵테일 클라우드 접속 사용자 아이디   설명 시스템 사용자 설명    </description>
     </item>
     
     <item>
       <title>2.1.6 시스템 사용자 편집</title>
-      <link>http://acornapps.github.io/2.system-management/2.1.system/2.1.6-useredit/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.6-useredit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.1.system/2.1.6-useredit/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.6-useredit/</guid>
       <description>시스템 사용자 정보(이름, 설명)를 편집 하는 기능이다.
 a) 좌측 메인메뉴 → 시스템 → 사용자 액션 메뉴 → 사용자 편집를 클릭한다. </description>
     </item>
     
     <item>
       <title>2.1.7 시스템 사용자 비밀번호 초기화</title>
-      <link>http://acornapps.github.io/2.system-management/2.1.system/2.1.7-userreset/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.7-userreset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.1.system/2.1.7-userreset/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.7-userreset/</guid>
       <description>Cocktail Cloud 사용자 비밀번호를 초기화 하는 기능이다. (초기화 후 제공받는 초기 비밀번호는 &amp;lsquo;Pass0000&amp;rsquo;이다.)
 a) 좌측 메인메뉴 → 시스템 → 사용자 액션 메뉴 → 사용자 비밀번호 초기화를 클릭한다. </description>
     </item>
     
     <item>
       <title>2.1.8 시스템 사용자 삭제</title>
-      <link>http://acornapps.github.io/2.system-management/2.1.system/2.1.8-userdelete/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.8-userdelete/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.1.system/2.1.8-userdelete/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.8-userdelete/</guid>
       <description>시스템 사용자를 삭제하는 기능이다.
 a) 좌측 메인메뉴 → 시스템 → 사용자 액션 메뉴 → 사용자 삭제를 클릭한다. </description>
     </item>
     
     <item>
       <title>2.2.1 클러스터 등록</title>
-      <link>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.1-add/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.1-add/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.1-add/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.1-add/</guid>
       <description>클러스터를 추가 등록할 수 있는 기능이다.
 a) 클러스터 → 오른쪽 상단 + 클러스터 등록 버튼을 클릭한다. b) 기본 정보(이름, 쿠버네티스 버전, 아이디, 설명)를 입력한다.
    기본 정보 설명     이름 등록할 클러스터의 이름   쿠버네티스 버전 클러스터에 설치된 Kubernetes의 버전정보. e.g) 1.8.13   아이디 클러스터 고유 아이디(사용자 지정), 알람 메시지 Redirect시 필요   설명 클러스터에 대한 사용자 설명    c) 프로바이더 정보(프로바이더, 유형, 리전)를 입력한다.</description>
@@ -178,70 +178,70 @@ a) 클러스터 → 오른쪽 상단 + 클러스터 등록 버튼을 클릭한�
     
     <item>
       <title>2.2.2 클러스터 수정</title>
-      <link>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.2-update/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.2-update/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.2-update/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.2-update/</guid>
       <description>클러스터의 기본정보, 프로바이더, 모니터링, 클러스터 유형을 수정하는 기능이다. 프로바이더의 계정, 유형, 리전은 변경할 수 없다.
 a) 클러스터 → 클러스터 선택 → 등록관리 → 수정버튼 → 수정 완료 후 저장버튼을 클릭한다. </description>
     </item>
     
     <item>
       <title>2.2.3 클러스터 삭제</title>
-      <link>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.3-delete/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.3-delete/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.3-delete/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.3-delete/</guid>
       <description>클러스터 정보를 삭제하는 기능이다. 해당 클러스터를 사용하고 있는 어플리케이션 맵이 있을 경우 삭제할 수 없다.
 a) 클러스터 → 클러스터 선택 → 등록관리 → 삭제버튼을 클릭한다. </description>
     </item>
     
     <item>
       <title>2.2.4 볼륨</title>
-      <link>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.4-volume/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.4-volume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.4-volume/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.4-volume/</guid>
       <description>Public Cloud 스토리지 및 외부 스토리지 정보를 등록하고, 볼륨 현황에 대한 모니터링 서비스를 제공한다.
 a) 클러스터 → 클러스터 선택 → 볼륨을 클릭한다.    스토리지 설정 정보 설명     + 버튼 스토리지 추가 페이지로 이동   이름 스토리지 이름(사용자지정)   타입 스토리지 종류(NFS/EBS/Google Persistent Disk/Azure Disk)   스토리지 클래스 이름 k8s에 등록된 Class Name   정책 스토리지 볼륨의 정책 설정(Retain,Recyle,Delete)   상태 스토리지 사용 상태       볼륨 설정 정보 설명     볼륨이름 PVC 이름   상태 PVC 마운트 상태   사용량 PV의 할당된 가용량과 사용량   접속모드 PV 접속 권한   Age PVC 생성 경과 시간    </description>
     </item>
     
     <item>
       <title>2.2.5 스토리지 추가</title>
-      <link>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.5-add/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.5-add/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.5-add/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.5-add/</guid>
       <description>볼륨을 추가하여 사용 할 수 있다.
 a) 클러스터 → 클러스터 선택 → 볼륨을 클릭 → 오른쪽 상단 + 모양의 버튼을 클릭한다. b) 클러스터, 이름, 설명, 스토리지 플러그인, 정책, 스토리지 클래스 이름을 차례로 기입한다.    스토리지 등록 정보 설명     이름 PV 이름   설명 PV 사용자 설명   유형 스리지 유형 (Single, Shared)   스토리지 플러그인 스토리지 종류(NFS, NFS Named, EBS, Google Persistent Disk, Azure Disk)   정책 PV 사용 정책(RETAIN/DELETE)       유형 설명     Single 워크로드 하나에서만 사용 가능한 스토리   Shared 워크로드 간에 공유하여 사용 가능한 스토리지       정책 설명     Retain PersistentVolumeClaim(PVC)가 삭제되도 PersistentVolume(PV)안에 데이터가 남는다.</description>
     </item>
     
     <item>
       <title>2.2.6 스토리지 편집</title>
-      <link>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.6-edit/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.6-edit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.6-edit/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.6-edit/</guid>
       <description>등록된 스토리지 정보를 편집하는 기능이다. 단, NFS Named 타입의 스토리지는 편집할 수 없다.
 a) 클러스터 → 클러스터 선택 → 볼륨 → 볼륨 액션 버튼 → 스토리지 편집을 클릭한다. b) 이름, 설명, 정책, 스토리지 클래스 이름, 파라미터값을 수정 할 수 있다. </description>
     </item>
     
     <item>
       <title>2.2.7 스토리지 삭제</title>
-      <link>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.7-delete/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.7-delete/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.2.cluster/2.2.7-delete/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.2.cluster/2.2.7-delete/</guid>
       <description>등록된 스토리지 정보를 삭제하는 기능이다.
 a) 클러스터 → 클러스터 선택 → 볼륨 → 볼륨 액션버튼 → 볼륨 삭제를 클릭한다. </description>
     </item>
     
     <item>
       <title>2.3.1 워크스페이스 생성</title>
-      <link>http://acornapps.github.io/2.system-management/2.3.workspace/2.3.1-add/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.3.workspace/2.3.1-add/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.3.workspace/2.3.1-add/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.3.workspace/2.3.1-add/</guid>
       <description>워크스페이스를 생성 하는 기능이다. 워크스페이스 별로 구성원 등록 및 클러스터, 레지스트리(저장소) 등록을 할 수 있다.
 a) 좌측 메인메뉴 → 워크스페이스 → 오른쪽 상단 워크스페이스 생성 버튼을 클릭한다. b) 서비스에 사용할 이름, 설명, 색상, 레지스트리 및 구성원, 클러스터 정보를 등록한다. c) 구성원, 클러스터 추가는 체크박스가 선택 된것만 반영이 된다.
  클러스터 편집  구성원 편집   </description>
@@ -249,20 +249,20 @@ a) 좌측 메인메뉴 → 워크스페이스 → 오른쪽 상단 워크스페�
     
     <item>
       <title>2.3.2 워크스페이스 편집</title>
-      <link>http://acornapps.github.io/2.system-management/2.3.workspace/2.3.2-edit/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.3.workspace/2.3.2-edit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.3.workspace/2.3.2-edit/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.3.workspace/2.3.2-edit/</guid>
       <description>워크스페이스 정보를 편집하는 기능이다. 워크스페이스 이름, 설명, 색상 변경이 가능하며 해당 서비스를 사용할 구성원 편집, 워크스페이스에 등록할 클러스터 편집이 가능하다.
 a) 좌측 메인메뉴 → 워크스페이스 → 워크스페이스 액션 메뉴 → 워크스페이스 편집 → 수정완료 후 수정버튼을 클릭한다. b) 워크스페이스 명, 설명, 색상 및 구성원, 클러스터 수정이 가능하다. </description>
     </item>
     
     <item>
       <title>2.3.3 워크스페이스 삭제</title>
-      <link>http://acornapps.github.io/2.system-management/2.3.workspace/2.3.3-delete/</link>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.3.workspace/2.3.3-delete/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>cloud.jung@acornsoft.io (cloud.jung)</author>
-      <guid>http://acornapps.github.io/2.system-management/2.3.workspace/2.3.3-delete/</guid>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.3.workspace/2.3.3-delete/</guid>
       <description>워크스페이스를 삭제 하는 기능이다. 삭제 시, 워크스페이스에 클러스터가 등록되어 있을 경우 삭제가 불가능하며 워크스페이스 편집에서 클러스터를 제거 후 삭제를 진행할 수 있다.
 a) 좌측 메인메뉴 → 워크스페이스 → 워크스페이스 액션 메뉴 → 워크스페이스 삭제를 클릭한다. </description>
     </item>
