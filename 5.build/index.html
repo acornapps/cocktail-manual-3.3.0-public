@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/cocktail-manual-3.3.0-public/images/favicon.png" type="image/png">
 
-    <title>시스템 관리 :: 칵테일 클라우드</title>
+    <title>빌드 관리 :: 칵테일 클라우드</title>
 
     
     <link href="/cocktail-manual-3.3.0-public/css/nucleus.css?1555759221" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/cocktail-manual-3.3.0-public/2.system-management/">
+  <body class="" data-url="/cocktail-manual-3.3.0-public/5.build/">
     <nav id="sidebar" class="">
 
 
@@ -258,8 +258,8 @@
   
     
     <li data-nav-id="/cocktail-manual-3.3.0-public/2.system-management/" title="시스템 관리" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/cocktail-manual-3.3.0-public/2.system-management/">
@@ -780,8 +780,8 @@
   
     
     <li data-nav-id="/cocktail-manual-3.3.0-public/5.build/" title="빌드 관리" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/cocktail-manual-3.3.0-public/5.build/">
@@ -985,7 +985,7 @@
             
           
           
-            <a href='/cocktail-manual-3.3.0-public/'>칵테일 클라우드</a> > 시스템 관리
+            <a href='/cocktail-manual-3.3.0-public/'>칵테일 클라우드</a> > 빌드 관리
           
          
           
@@ -1002,7 +1002,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#a-좌측-메인메뉴-워크스페이스">a) 좌측 메인메뉴 → 워크스페이스</a></li>
+<li><a href="#a-좌측-메인-메뉴-빌드-를-클릭하여-해당-페이지로-이동한다">a) 좌측 메인 메뉴 → 빌드 를 클릭하여 해당 페이지로 이동한다.</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -1022,7 +1022,7 @@
           
             <h1>
               
-              시스템 관리
+              빌드 관리
             </h1>
           
 
@@ -1035,44 +1035,66 @@
 
 <hr />
 
-<p>빌드 및 배포, 운영할 수 있는 워크스페이스를 할당한다. 워크스페이스 별로 사용자, 클러스터, 라이브러리 등록이 가능하다.</p>
+<p>도커(Docker) 이미지에 대한 빌드 작업을 관리한다.</p>
 
-<h3 id="a-좌측-메인메뉴-워크스페이스">a) 좌측 메인메뉴 → 워크스페이스</h3>
+<p>어플리케이션을 다운로드, 소스 파일을 빌드, 이미지 파일을 생성하여 Harbor 레지스트리에 업로드한다.</p>
 
-<p><img src="/cocktail-manual-3.3.0-public/images/assets/KR/3.1.1/2.3_1.png" alt="" /></p>
+<h3 id="a-좌측-메인-메뉴-빌드-를-클릭하여-해당-페이지로-이동한다">a) 좌측 메인 메뉴 → 빌드 를 클릭하여 해당 페이지로 이동한다.</h3>
+
+<p><img src="{{ site.baseurl }}/assets/KR/{{ site.version }}/5_1.png" alt="" /></p>
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>서비스 설정</strong></th>
+<th align="center"><strong>목록</strong></th>
 <th align="left"><strong>설명</strong></th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="left">워크스페이스 명</td>
-<td align="left">워크스페이스 이름 (사용자지정)</td>
+<td align="center">+</td>
+<td align="left">빌드 생성 버튼</td>
 </tr>
 
 <tr>
-<td align="left">클러스터 수</td>
-<td align="left">워크스페이스에 할당된 클러스터 수</td>
+<td align="center">Filter</td>
+<td align="left">검색을 통해 필요한 빌드 조회</td>
 </tr>
 
 <tr>
-<td align="left">구성원 수</td>
-<td align="left">워크스페이스를 사용하는 구성원 수</td>
+<td align="center">빌드명</td>
+<td align="left">빌드의 이름</td>
 </tr>
 
 <tr>
-<td align="left">시스템 명</td>
-<td align="left">시스템 명</td>
+<td align="center">이미지명</td>
+<td align="left">저장된 도커 이미지 이름</td>
 </tr>
 
 <tr>
-<td align="left">설명</td>
-<td align="left">워크스페이스 설명</td>
+<td align="center">이미지 사이즈</td>
+<td align="left">저장된 도커 이미지의 크기. MB단위로 표기</td>
+</tr>
+
+<tr>
+<td align="center">최근 액션</td>
+<td align="left">빌드의 상태를 표시</td>
+</tr>
+
+<tr>
+<td align="center">상태</td>
+<td align="left">빌드의 실행 상태를 표시</td>
+</tr>
+
+<tr>
+<td align="center">날짜</td>
+<td align="left">빌드가 실행된 날짜를 표시</td>
+</tr>
+
+<tr>
+<td align="center"><img src="{{ site.baseurl }}/assets/action-menu.png" alt="" /></td>
+<td align="left">빌드 액션 메뉴(작업 설정 편집, 히스토리, 빌드 실행, 빌드 취소, 로그 보기, 작업 삭제)</td>
 </tr>
 </tbody>
 </table>
@@ -1231,7 +1253,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1246,9 +1267,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1621,6 +1639,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1636,6 +1655,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1737,10 +1759,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/cocktail-manual-3.3.0-public/1.intro/0.6/" title="Dashboard Layer (대시보드 레이어)"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/cocktail-manual-3.3.0-public/4.service/" title="서비스"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/cocktail-manual-3.3.0-public/2.system-management/2.1.system/" title="2.1 시스템" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/cocktail-manual-3.3.0-public/6.catalog/" title="카탈로그" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

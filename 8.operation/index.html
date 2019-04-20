@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/cocktail-manual-3.3.0-public/images/favicon.png" type="image/png">
 
-    <title>시스템 관리 :: 칵테일 클라우드</title>
+    <title>시스템 운영 :: 칵테일 클라우드</title>
 
     
     <link href="/cocktail-manual-3.3.0-public/css/nucleus.css?1555759221" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/cocktail-manual-3.3.0-public/2.system-management/">
+  <body class="" data-url="/cocktail-manual-3.3.0-public/8.operation/">
     <nav id="sidebar" class="">
 
 
@@ -258,8 +258,8 @@
   
     
     <li data-nav-id="/cocktail-manual-3.3.0-public/2.system-management/" title="시스템 관리" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/cocktail-manual-3.3.0-public/2.system-management/">
@@ -846,8 +846,8 @@
   
     
     <li data-nav-id="/cocktail-manual-3.3.0-public/8.operation/" title="시스템 운영" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/cocktail-manual-3.3.0-public/8.operation/">
@@ -985,7 +985,7 @@
             
           
           
-            <a href='/cocktail-manual-3.3.0-public/'>칵테일 클라우드</a> > 시스템 관리
+            <a href='/cocktail-manual-3.3.0-public/'>칵테일 클라우드</a> > 시스템 운영
           
          
           
@@ -996,17 +996,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#a-좌측-메인메뉴-워크스페이스">a) 좌측 메인메뉴 → 워크스페이스</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -1022,7 +1012,7 @@
           
             <h1>
               
-              시스템 관리
+              시스템 운영
             </h1>
           
 
@@ -1031,48 +1021,47 @@
 
 
 
-	
+	<hr />
 
-<hr />
-
-<p>빌드 및 배포, 운영할 수 있는 워크스페이스를 할당한다. 워크스페이스 별로 사용자, 클러스터, 라이브러리 등록이 가능하다.</p>
-
-<h3 id="a-좌측-메인메뉴-워크스페이스">a) 좌측 메인메뉴 → 워크스페이스</h3>
-
-<p><img src="/cocktail-manual-3.3.0-public/images/assets/KR/3.1.1/2.3_1.png" alt="" /></p>
+<p>클러스터의 등록관리와 노드와 서비스 단위의 모니터링, 볼륨, 알람, 미터링 서비스가 제공된다.<img src="{{ site.baseurl }}/assets/KR/{{ site.version }}/7_1.png" alt="" /></p>
 
 <table>
 <thead>
 <tr>
-<th align="left"><strong>서비스 설정</strong></th>
-<th align="left"><strong>설명</strong></th>
+<th align="left">클러스터 메뉴</th>
+<th align="left">설명</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="left">워크스페이스 명</td>
-<td align="left">워크스페이스 이름 (사용자지정)</td>
+<td align="left">노드</td>
+<td align="left">전체 노드의 CPU, Memory, Network 사용량 및 개별 노드의 모니터링 서비스</td>
 </tr>
 
 <tr>
-<td align="left">클러스터 수</td>
-<td align="left">워크스페이스에 할당된 클러스터 수</td>
+<td align="left">서비스</td>
+<td align="left">전체 서비스의 CPU, Memory, Network 사용량 및 개별 서비스의 모니터링 서비스</td>
 </tr>
 
 <tr>
-<td align="left">구성원 수</td>
-<td align="left">워크스페이스를 사용하는 구성원 수</td>
+<td align="left">볼륨</td>
+<td align="left">스토리지 및 볼륨 현황</td>
 </tr>
 
 <tr>
-<td align="left">시스템 명</td>
-<td align="left">시스템 명</td>
+<td align="left">알람</td>
+<td align="left">클러스터의 이벤트 정보 관련 알람 서비스</td>
 </tr>
 
 <tr>
-<td align="left">설명</td>
-<td align="left">워크스페이스 설명</td>
+<td align="left">미터링</td>
+<td align="left">클러스터 비용과 리소스별 비용 서비스</td>
+</tr>
+
+<tr>
+<td align="left">등록관리</td>
+<td align="left">클러스터 정보 조회</td>
 </tr>
 </tbody>
 </table>
@@ -1231,7 +1220,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1246,9 +1234,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1669,6 +1654,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1684,6 +1670,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1737,10 +1726,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/cocktail-manual-3.3.0-public/1.intro/0.6/" title="Dashboard Layer (대시보드 레이어)"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/cocktail-manual-3.3.0-public/7.cluster/" title="클러스터"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/cocktail-manual-3.3.0-public/2.system-management/2.1.system/" title="2.1 시스템" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/cocktail-manual-3.3.0-public/9.member/" title="구성원" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
