@@ -85,6 +85,35 @@ Build는 코드 다운로드, 코드 빌드 및 테스트등 작업(Task), 컨�
     </item>
     
     <item>
+      <title>10.1 Kubernetes(k8s)</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/10.terminology/10.1-kubenetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/10.terminology/10.1-kubenetes/</guid>
+      <description>1.Cluster    용어 설명     Namespace k8s의 가상 클러스터로 사용자들이 여러팀 또는 프로젝트로 분산되어 작업 할 수 있는 별도의 환경   Nodes k8s의 클러스터링되어 있는 어플리케이션을 구동하는 물리서버 또는 VM   Persistent Volumes(PV) 외부 저장소. NFS, iSCSI, 클라우드에서 제공하는 스토리지 시스템을 지원   Roles 사용의 따라 권한을 부여.   Storage Classes PV를 동적으로 Provisioning 할 경우, NFS 서버를 식별하기 위한 식별자    2.</description>
+    </item>
+    
+    <item>
+      <title>10.2 Cocktail Cloud</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/10.terminology/10.2-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/10.terminology/10.2-system/</guid>
+      <description>1.환경설정 Cocktail Cloud을 이용하기 위해서 사전에 정보를 등록하는 서비스
+   용어 설명     사용자 Cocktail Cloud을 이용하기 위한 사용자 관리를 지원   계정 k8s Cluster에 대한 사용자 인증 정보에 대한 관리를 지원   서비스 업무 또는 프로젝트 단위로 작업을 분산하여 관리. 관리자는 일반사용자에 대하여 서비스 단위로 접근권한을 부여할 수 있다.    C.클러스터 : k8s를 사용하기 위한 k8s정보를 관리하는 페이지
+2.서비스 서비스 단위로 작업을 세분화가 가능하며, 빌드를 통한 Docker 이미지를 생성 할 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>10.3 Cocktail Cloud System Error Code</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/10.terminology/10.3-error-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/10.terminology/10.3-error-code/</guid>
+      <description>1. 에러 코드    코드 메시지     CCCM001 구체적 오류 번호를 밝힐 수 없음.   CCCM002 알수 없는 오류 입니다   CCCM004 잘못된 함수 호출 인자입니다   CCCM005 인증되지 않은 요청입니다   CCCM006 전달된 정보가 올바르지 않습니다   CCCM007 서버, 작업 등이 올바르지 않거나 요청을 처리할 수 없습니다   CCCM019 내부 서버 오류   CCCM020 외부 호출 API가 오류를 반환 또는 호출이 실패 했습니다   CCCM023 수행 할 작업이 없습니다   CCCM026 오류가 발생하였습니다.</description>
+    </item>
+    
+    <item>
       <title>2.1.1 시스템 편집</title>
       <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.1.system/2.1.1-edit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -265,6 +294,306 @@ a) 좌측 메인메뉴 → 워크스페이스 → 워크스페이스 액션 메�
       <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.3.workspace/2.3.3-delete/</guid>
       <description>워크스페이스를 삭제 하는 기능이다. 삭제 시, 워크스페이스에 클러스터가 등록되어 있을 경우 삭제가 불가능하며 워크스페이스 편집에서 클러스터를 제거 후 삭제를 진행할 수 있다.
 a) 좌측 메인메뉴 → 워크스페이스 → 워크스페이스 액션 메뉴 → 워크스페이스 삭제를 클릭한다. </description>
+    </item>
+    
+    <item>
+      <title>3.1 사용자 관리</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/3.dashboard/3.1-user/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/3.dashboard/3.1-user/</guid>
+      <description>현재 사용자 정보를 확인 및 관리 할 수 있다.
+a) 대시보드 -&amp;gt; 페이지 왼쪽 하단 사용자 모양 버튼을 클릭    목록 설명     ID 현재 사용중인 계정의 ID를 확인할 수 있다.   사용자 언어 선택 Korean, Japanese, English, Chinese 중 언어를 선택할 수 있다.   사용자 타임존 선택 Seoul, Tokyo, NewYork, Shanghai 중 타임존을 선택할 수 있다.   테마 Light와 Dark 테마 변경할 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>5.1 빌드 추가</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.1-add/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.1-add/</guid>
+      <description>도커 이미지에 대한 빌드 작업을 추가한다. 어플리케이션 다운로드, 빌드, 이미지 빌드로 총 3가지를 선택 할 수 있다.
+a) 좌측 메인 메뉴 → 빌드 화면에서 [+] 버튼을 클릭하여 해당 페이지로 이동한다. b) 기본 정보, 어플리케이션 다운로드, 어플리케이션 빌드, 이미지 빌드 내용을 작성하고 [생성] 버튼을 눌러 빌드를 생성한다.    빌드 생성 단계 설명     어플리케이션 다운로드 빌드에 필요한 소스를 다운로드   어플리케이션 빌드 소스의 컴파일이 필요할 경우 사용커맨드 - 빌드하면서 실행될 작업호스트 경로 - 작업이 이루어질 컨테이너 경로와 그와 마운트되는 호스트경로Working dir -실제 컨테이너안에서 작업할 경로로 컨테이너 경로와 맞춤이미지 - 빌드시 사용될 이미지   이미지 빌드 앞서 작업된 소스로 도커파일을 만들어 이미지를 만들고 해당이미지를 레지스트리 저장소에 저장하는 단계     빌드 기본 정보     기본 정보 설명     이름 생성할 빌드의 이름   최근 액션 빌드의 최근 동작 상태   상태 빌드의 현재 상태     어플리케이션 다운로드     어플리케이션 다운로드 설명     리파지토리 종류 소스파일을 내려받을 버전관리툴의 종류.</description>
+    </item>
+    
+    <item>
+      <title>5.2 작업 설정 편집</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.2-edit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.2-edit/</guid>
+      <description> 빌드 작업을 편집한다.
+a) 좌측 메인 메뉴 → 빌드 → 빌드 액션 메뉴(활성화) → [작업 설정 편집]을 선택하여 해당 페이지로 이동한다. b) 기본 정보, 어플리케이션 다운로드, 어플리케이션 빌드, 이미지 빌드 내용을 수정하고 [수정] 버튼을 눌러 작업 설정을 편집한다. </description>
+    </item>
+    
+    <item>
+      <title>5.3 히스토리</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.3-history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.3-history/</guid>
+      <description> 해당 빌드의 히스토리 페이지로 이동하여 빌드 실행 항목에 대하여 히스토리 정보를 볼 수 있다.
+a) 좌측 메인 메뉴 → 빌드 화면에서 빌드 액션 메뉴(활성화) → [히스토리]를 클릭하여 해당 페이지로 이동한다. b) 액션 메뉴(활성화) → [로그보기]를 클릭하여 빌드 로그를 확인할 수 있다. </description>
+    </item>
+    
+    <item>
+      <title>5.4 빌드 실행</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.4-run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.4-run/</guid>
+      <description>빌드 작업을 실행한다. 빌드 실행을 하면, 어플리케이션 다운로드, 어플리케이션 빌드, 이미지 빌드를 한 번에 실행한다.
+a) 빌드 목록에서 실행할 빌드 작업의 빌드 액션 메뉴(활성화) → [빌드 실행]을 선택하면 빌드실행 창이 활성화된다. b|) 설명을 입력 후, [승인] 버튼을 클릭하면 빌드 작업을 실행한다. c) 빌드 실행 시, 현재 액션이 변경되면서 빌드 로그 창이 활성화 된다. 빌드생성시 체크박스에서 선택된 순서대로 순차적으로 실행되며 각 단계별로 빌드 과정을 확인 할 수 있다.
+(DOWN 단계에서 오류가 발생하면 다음 단계로 진행이 되지 않는다.</description>
+    </item>
+    
+    <item>
+      <title>5.5 빌드 취소</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.5-cancel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.5-cancel/</guid>
+      <description> 빌드 작업을 취소한다. 빌드작업이 실행 상태(RUNNING)인 것만 취소할 수 있다.
+a) 빌드 목록에서 취소할 빌드 작업의 빌드 액션 메뉴(활성화) → [빌드 취소]를 선택하여 빌드 작업을 취소한다. </description>
+    </item>
+    
+    <item>
+      <title>5.6 로그 보기</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.6-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.6-log/</guid>
+      <description> 빌드작업의 최근 실행 로그를 보여준다. 빌드실행 도중이라면 실행 중인 로그를 볼 수 있다.
+a) 빌드 목록에서 로그 보기할 빌드 작업의 빌드 액션 메뉴(활성화) → [로그 보기]를 선택하여 해당 빌드 작업의 빌드 실행 로그를 볼 수 있다. </description>
+    </item>
+    
+    <item>
+      <title>5.7 작업 삭제</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.7-delete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.7-delete/</guid>
+      <description> 빌드 작업을 삭제한다.
+a) 빌드 목록에서 삭제할 빌드 작업의 빌드 액션 메뉴(활성화) → [작업 삭제]를 선택하여 해당 빌드 작업을 삭제할 수 있다. </description>
+    </item>
+    
+    <item>
+      <title>6.1 카탈로그 저장</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.1-add/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.1-add/</guid>
+      <description>카탈로그를 생성하여 필요한 서버들을 묶어 한 번에 배포 할 수 있다. 워크로드 컨테이너 이미지가 빌드 인 경우에는 이미지만을 저장하여 공용이미지로 변환하여 카탈로그로 저장한다. 저장된 카탈로그는 서비스 카탈로그에서 확인 할 수 있다.
+카탈로그 저장시 설정의 컨피그 맵, 시크릿도 템플릿으로 저장한다. (단, 시크릿은 보안상 값은 저장하지 않는다.)
+a) 서비스에서 카탈로그로 저장하는 서비스 맵을 선택 b) 화면 우측 상단 카탈로그로 저장&amp;rsquo; 버튼을 클릭 c) 신규로 템플릿 생성 시 &amp;lsquo;신규&amp;rsquo; 카테고리를, 기존 템플릿을 업데이트 할 시 &amp;lsquo;기존&amp;rsquo; 카테고리 선택 후 버전, 요약정보, 편집 내용 작성 후 아래 &amp;lsquo;저장&amp;rsquo; 버튼을 클릭.</description>
+    </item>
+    
+    <item>
+      <title>6.2 카탈로그 배포</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.2-deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.2-deploy/</guid>
+      <description>생성된 카탈로그를 배포할 수 있다. 필요 시 불필요한 인스턴스를 제외하거나 편집하여 배포 가능하다.
+a) 카탈로그 → 배포하고자 하는 템플릿의 &amp;lsquo;배포&amp;rsquo; 버튼을 클릭 b) 템플릿 카테고리에서 서비스 맵 그룹, 클러스터, 서비스 맵 선택 후 &amp;lsquo;배포&amp;rsquo; 클릭. 원하지 않는 인스턴스는 제외하고 배포할 수 있다.  신규 Service Map 배포 시 서비스 맵 그룹, 클러스터를 선택하고 서비스 맵, 네임스페이스 이름을 작성 후 배포할 수 있다.  기존 Serivce Map 배포 시 서비스 맵 그룹, 서비스 맵 선택 후 배포할 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>6.3 카탈로그 편집</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.3-edit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.3-edit/</guid>
+      <description>생성한 카탈로그 내용을 편집할 수 있다. 템플릿의 버전, 요약정보, 편집 내용을 수정할 수 있으며 각 인스턴스의 배포 정보를 수정할 수 있다.
+a) 카탈로그 → 편집하고자 하는 템플릿 &amp;lsquo;편집&amp;rsquo; 버튼을 클릭 b) 수정할 템플릿의 버전, 요약정보, 편집 내용을 수정하고, 화면 우측 하단 &amp;lsquo;편집&amp;rsquo;버튼 클릭하여 인스턴스의 배포 정보를 수정할 수 있다. c) 편집 화면에서 컨피그맵과 시크릿은 편집은 불가하고 내용만 확인 가능하다. d) 워크로드 편집시 컨테이너 환경설정과 볼륨, 볼륨마운트는 편집은 불가하고 내용만 확인 가능하다.</description>
+    </item>
+    
+    <item>
+      <title>6.4 카탈로그 삭제</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.4-delete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.4-delete/</guid>
+      <description> 불필요한 카탈로그를 삭제할 수 있다. (플랫폼 카탈로그는 삭제 불가)
+a) 카탈로그 → 삭제하고자 하는 템플릿 &amp;lsquo;편집&amp;rsquo; 버튼을 클릭 b) 삭제할 템플릿의 버전을 선택 후, &amp;lsquo;삭제&amp;rsquo; 버튼을 클릭한다. 해당 템플릿 버전에 대하여 삭제된다. </description>
+    </item>
+    
+    <item>
+      <title>6.5 카탈로그 내보내기</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.5-export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.5-export/</guid>
+      <description> 존재하는 카탈로그를 내보내기할 수 있다. (플랫폼 카탈로그는 내보내기 불가)
+a) 카탈로그 → 내보내기 하고자 하는 템플릿 &amp;lsquo;편집&amp;rsquo; 버튼을 클릭 b) 화면 왼쪽 상단의 &amp;lsquo;내보내기&amp;rsquo; 버튼을 클릭 한다. 해당 카탈로그가 카탈로그명-버전.zip 로 다운로드 된다. </description>
+    </item>
+    
+    <item>
+      <title>6.6 카탈로그 가져오기</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.6-import/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.6-import/</guid>
+      <description> 내보내기된 카탈로그 파일과 가져오기 기능을 통해 카탈로그를 생성할 수 있다. (플랫폼 카탈로그는 가져오기 불가)
+a) 카탈로그 → &amp;lsquo;가져오기&amp;rsquo; 버튼을 클릭 b) &amp;lsquo;Choose File&amp;rsquo; 버튼을 클릭해 가져오기 할 카탈로그 압축파일을 선택한 후 &amp;lsquo;저장&amp;rsquo; 버튼을 누른다. </description>
+    </item>
+    
+    <item>
+      <title>7.1 클러스터 목록</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.1-cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.1-cluster/</guid>
+      <description> 시스템관리자에 의해 등록된 Kubernetes 클러스터 목록 정보를 조회 하는 기능이다.
+a) 클러스터 → 정렬 버튼을 클릭하여 원하시는 정렬기준을 선택한다.     클러스터 설정 설명     클러스터 클러스터 종류   노드 클러스터의 노드 숫자   CPU 클러스터의 전체 CPU 용량, 요청량, 사용량   메모리 클러스터의 전체 메모리 용량, 요청량, 사용량   서비스 클러스터의 서비스 맵(네임스페이스)의 숫자   워크로드 클러스터에서 배포 중인 워크로드의 숫자    </description>
+    </item>
+    
+    <item>
+      <title>7.2 노드</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.2-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.2-node/</guid>
+      <description> 전체 노드의 총 Disk, CPU, Memory, Network 사용량과 개별 노드의 라벨, 상태정보 등을 조회할 수 있는 화면이다. 노드 명을 클릭하면 노드 상세 정보를 조회 할 수 있다.
+a) 클러스터 → 클러스터 선택 → 노드를 클릭한다. b) 노드명을 클릭하여 노드 상세 정보를 확인할 수 있다. </description>
+    </item>
+    
+    <item>
+      <title>7.3 서비스</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.3-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.3-application/</guid>
+      <description> 전체 서비스의 총 CPU, Memory, Network 사용량과 개별 서비스의 네임스페이스, 인스턴스 현황 등을 조회 할 수 있는 화면이다. 서비스 명을 클릭하면 해당 서비스 맵 페이지로 이동할 수 있다.
+a) 클러스터 → 클러스터 선택 → 서비스을 클릭한다. </description>
+    </item>
+    
+    <item>
+      <title>7.4 볼륨</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.4-volume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.4-volume/</guid>
+      <description> Public Cloud 스토리지 및 볼륨 현황에 대한 정보와 모니터링 서비스를 제공한다.
+a) 클러스터 → 클러스터 선택 → 볼륨을 클릭한다.    스토리지 설정 정보 설명     이름 스토리지 이름(사용자지정)   타입 스토리지 종류(NFS/EBS/Google Persistent Disk/Azure Disk)   스토리지 클래스 이름 k8s에 등록된 Class Name   정책 스토리지 볼륨의 정책 설정(Retain,Recyle,Delete)   상태 스토리지 사용 상태       볼륨 설정 정보 설명     볼륨이름 PVC 이름   상태 PVC 마운트 상태   사용량 PV의 할당된 가용량과 사용량   접속모드 PV 접속 권한   Age PVC 생성 경과 시간    </description>
+    </item>
+    
+    <item>
+      <title>7.5 알람</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.5-alarm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.5-alarm/</guid>
+      <description> 클러스터에 대한 이벤트를 알람으로 받을 수 있다.
+a) 클러스터 → 클러스터 선택 → 알람을 클릭한다. b) 알람 명 클릭 시 상세 내용을 확인 할 수 있다. </description>
+    </item>
+    
+    <item>
+      <title>7.5.1 알람 목록</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.5.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.5.1/</guid>
+      <description>알람은 다음 목록에서 발생 조건이 지속 시간 만큼 계속될 경우 발생한다.
+ AlertManager     알람 ID ALM-001     중요도 warning   알람 이름 AlertmanagerDown   지속 시간 5분   발생 조건 Alertmanager 메트릭 수집이 안 될 경우 발생   조치 사항 Prometheus의 로그 및 Alertmanager의 로그와 이벤트를 확인한다.
+필요할 경우, Pod를 재시작한다.       알람 ID ALM-002     중요도 warning   알람 이름 AlertmanagerFailedReload   지속 시간 10분   발생 조건 Alertmanager의 설정 변경시, 설정 다시읽기 작업 실패시 발생   조치 사항 해당 Pod의 로그를 확인하여 ConfigMap의 설정 오류를 수정한다.</description>
+    </item>
+    
+    <item>
+      <title>7.6 미터링</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.6-metering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.6-metering/</guid>
+      <description> 사용 중인 클러스터별 미터링(요금)에 대한 모니터링 서비스를 제공한다.
+미터링 서비스는 Public Cloud 중 AWS와 GCP에만 적용되는 서비스이다.
+a) 클러스터 → 클러스터 선택 → 미터링을 클릭한다. </description>
+    </item>
+    
+    <item>
+      <title>7.7 등록정보</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.7-registration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.7-registration/</guid>
+      <description> 현재 클러스터에 대한 등록정보를 확인할 수 있다.
+Account 인증정보는 보안을 위해 노출되지 않는다.
+a) 클러스터 → 클러스터 선택 → 등록관리를 클릭한다. </description>
+    </item>
+    
+    <item>
+      <title>8.1.1.1 GKE 클러스터 만들기</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.1-cluster-kass-gke/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.1-cluster-kass-gke/</guid>
+      <description>GKE 클러스터를 배포하는 방법을 알아봅니다. Google Kubernetes Engine(GKE)에 로그인 https://cloud.google.com/kubernetes-engine/ 에서 Google cloud에 로그인합니다.
+서비스 계정 만들기 1. IAM 및 관리자에서 Service Account 만들기.  서비스 계정에는 다음 역할이 필요합니다.
+ project/viewer
+ kubernetes-engine/admin
+ service-account/user
+ 역할 기반 액세스 제어(Identity and Access Management)를 사용하기 위한 필요 조건:
+rbac 생성시 사전 필수 요소 필요.
+ 다음 명령어를 실행하여 Kubernetes에서 역할을 만들 수 있는 능력을 사용자에게 부여해야 합니다. [USER_ACCOUNT]는 사용자의 이메일 주소입니다.</description>
+    </item>
+    
+    <item>
+      <title>8.1.1.2 AKS 클러스터 만들기</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.2-cluster-kass-aks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.2-cluster-kass-aks/</guid>
+      <description>AKS 클러스터를 배포하는 방법을 알아봅니다. 사용 설명서 : Azure Portal을 사용하여 AKS(Azure Kubernetes Service) 클러스터 배포
+Azure에 로그인 https://portal.azure.com 에서 Azure Portal에 로그인합니다.
+AKS 클러스터 만들기 - Create a resource Azure Portal의 화면 왼쪽 상단 + Create a resource 선택 다음 &amp;gt; Kubernetes Service를 선택 합니다.
+1. Basics - 다음 옵션을 구성 합니다. Azure Kubernetes Service (AKS)는 호스팅 된 Kubernetes 환경을 관리하므로 컨테이너 오케스트레이션 전문 지식이 없어도 컨테이너 화 된 응용 프로그램을 빠르고 쉽게 배포 및 관리 할 수 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>8.1.1.3 EKS 클러스터 만들기</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.3-cluster-kass-eks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.3-cluster-kass-eks/</guid>
+      <description>8.1.1.3 EKS 클러스터 만들기 Quick Start EKS 클러스터를 배포하는 방법. Kubernetes 용 Amazon Elastic Container Service (Amazon EKS)를 사용하면 AWS의 Kubernetes를 사용하여 컨테이너 화 된 응용 프로그램을 쉽게 배포, 관리 및 확장 할 수 있다.
+참조 : Amazon Elastic Container Service for Kubernetes(EKS) 클러스터 배포
+Amazon Eks에 로그인  Amazon Eks에 로그인.  Amazon EKS 필수 조건  Amazon EKS 클러스터를 생성하기 전에 Kubernetes가 AWS 리소스 생성 시 수임할 수 있는 IAM 역할을 생성해야 한다.</description>
+    </item>
+    
+    <item>
+      <title>8.1.1.3 EKS 클러스터 정책 / 권한</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.4-cluster-kass-eks-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.4-cluster-kass-eks-policy/</guid>
+      <description>사용자 권한 / 정책 만들기 AWS 관리자 권한이 없다면 필요한 역할 / 정책 / 권한 을 요청 해야 합니다.
+1. 사용자 권한 / 정책 사용자가 클러스터를 생성 / 관리할 수 있는 권한 / 정책이 필요 합니다.
+ CloudFormation - 전체: 목록, 쓰기 제한: 읽기 / 이에 사용되는 리소스 권한이 있어야 합니다.
+AWS CloudFormation은 개발자와 시스템 관리자에게 관련 AWS 리소스 모음을 손쉽게 생성 및 관리하고 순서 있고 예측 가능한 방식으로 프로비저닝하고 업데이트 할 수있는 방법을 제공합니다.</description>
+    </item>
+    
+    <item>
+      <title>8.1.1.5 EKS 클러스터 만들기 Quick Start</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.5-cluster-kass-eks-quick-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.5-cluster-kass-eks-quick-start/</guid>
+      <description>1. 필수 Role(역할) / Policy(정책) 만들기 a. EKS 관리 역할 만들기. b. IAM(services) &amp;gt; Roles &amp;gt; Create role 화면에서 i. EKS 선택 : AmazonEKSClusterPolicy , AmazonEKSServicePolicy (default로 구성되어 있다) ii. Next: Permissions &amp;gt; Next: Tags &amp;gt; Next: Revies iii. Review 화면에서 1) Role name : EKSClusterRole 2) Create role 클릭 c. EKS 관리 정책 만들기. d. IAM(services) &amp;gt; Policies &amp;gt; Create policy 화면에서 i. Choose a service &amp;gt; Service : EKS 검색 및 선택 ii.</description>
+    </item>
+    
+    <item>
+      <title>8.1.2.1 클러스터 직접 구성</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.2.onpremise/8.1.2-cluster-on-premise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.2.onpremise/8.1.2-cluster-on-premise/</guid>
+      <description>Google cloud에 칵테일을 설치하는 과정은 다음과 같다.
+사전준비 설치 전 인스턴스 및 아래와 같은 프로그램들이 미리 설치 되어 있어야 하며 설치 되어 있지 않을 경우 에러 메시지가 발생한다.
+1) 제공받은 cube 바이너리를 어느 디렉토리에서든 사용할 수 있도록 환경변수 path 설정을 한다.
+2) Docker 다운로드 후 설치
+Get Docker CE for CentOS
+설치 1. 설치를 위해 빈 디렉토리를 만든 후 해당 디렉토리로 이동한다.
+# mkdir /Desktop/cube # cd /Desktop/cube  2.</description>
     </item>
     
   </channel>

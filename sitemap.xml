@@ -17,8 +17,20 @@
   </url>
   
   <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/</loc>
+  </url>
+  
+  <url>
     <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/1.intro/0.2/</loc>
     <lastmod>2019-04-19T10:41:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.2.onpremise/</loc>
   </url>
   
   <url>
@@ -85,6 +97,18 @@
     <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/</loc>
     <lastmod>2019-04-19T10:41:01+09:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/10.terminology/10.1-kubenetes/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/10.terminology/10.2-system/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/10.terminology/10.3-error-code/</loc>
   </url>
   
   <url>
@@ -165,6 +189,118 @@
   
   <url>
     <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/2.system-management/2.3.workspace/2.3.3-delete/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/3.dashboard/3.1-user/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.1-add/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.2-edit/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.3-history/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.4-run/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.5-cancel/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.6-log/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/5.build/5.7-delete/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.1-add/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.2-deploy/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.3-edit/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.4-delete/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.5-export/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/6.catalog/6.6-import/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.1-cluster/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.2-node/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.3-application/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.4-volume/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.5-alarm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.5.1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.6-metering/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/7.cluster/7.7-registration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.1-cluster-kass-gke/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.2-cluster-kass-aks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.3-cluster-kass-eks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.4-cluster-kass-eks-policy/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.1.kass/8.1.1.5-cluster-kass-eks-quick-start/</loc>
+  </url>
+  
+  <url>
+    <loc>http://acornapps.github.io/cocktail-manual-3.3.0-public/8.operation/8.1.cluster-install/8.1.2.onpremise/8.1.2-cluster-on-premise/</loc>
   </url>
   
   <url>
