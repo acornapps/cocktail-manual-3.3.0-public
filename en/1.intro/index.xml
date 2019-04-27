@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Understand Cocktail Cloud on Cocktial Cloud Manual</title>
+    <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/en/1.intro/</link>
+    <description>Recent content in Understand Cocktail Cloud on Cocktial Cloud Manual</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>kr-ko</language>
+    <managingEditor>cloud.jung@acornsoft.io (cloud.jung)</managingEditor>
+    <webMaster>cloud.jung@acornsoft.io (cloud.jung)</webMaster>
+    <lastBuildDate>Fri, 19 Apr 2019 10:41:01 +0900</lastBuildDate>
+    
+	<atom:link href="http://acornapps.github.io/cocktail-manual-3.3.0-public/en/1.intro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cocktail Structure Overview</title>
+      <link>http://acornapps.github.io/cocktail-manual-3.3.0-public/en/1.intro/0.1/</link>
+      <pubDate>Fri, 19 Apr 2019 10:41:01 +0900</pubDate>
+      <author>cloud.jung@acornsoft.io (cloud.jung)</author>
+      <guid>http://acornapps.github.io/cocktail-manual-3.3.0-public/en/1.intro/0.1/</guid>
+      <description>Cocktail is comprised of five layers that correspond to its various roles.
+ Cluster Management Layer: Responsible for infrastructure (cluster), where containers are deployed/executed, and orchestration. Kubernetes (https://kubernetes.io) handles orchestration and provides scaling management functions such as infrastructure management and monitoring.
+ Service Management Layer: Responsible for container configuration and management based on a service (workload) packages containers and associated objects that constitute a service and manages lifecycles and monitoring.</description>
+    </item>
+    
+  </channel>
+</rss>

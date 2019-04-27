@@ -1,0 +1,36 @@
+[
+{
+	"uri": "http://acornapps.github.io/cocktail-manual-3.3.0-public/en/1.intro/0.1/",
+	"title": "Cocktail Structure Overview",
+	"tags": [],
+	"description": "",
+	"content": "Cocktail is comprised of five layers that correspond to its various roles.\n Cluster Management Layer: Responsible for infrastructure (cluster), where containers are deployed/executed, and orchestration. Kubernetes (https://kubernetes.io) handles orchestration and provides scaling management functions such as infrastructure management and monitoring.\n Service Management Layer: Responsible for container configuration and management based on a service (workload) packages containers and associated objects that constitute a service and manages lifecycles and monitoring.\n Pipeline: Automates the coding and container build/deployment process and continuously integrates/deploys. Users can configure the desired pipeline via settings and scripting.\n Catalog: Provides common runtime (DB, middleware, etc.) templates. When needed, templates can be deployed and used without any additional configuration. In addition, templates can also store and manage snapshots of user applications.\n Dashboard: Provides cluster, service status, and monitoring views.\n  Let\u0026rsquo;s look at each layer in detail\n"
+},
+{
+	"uri": "http://acornapps.github.io/cocktail-manual-3.3.0-public/en/1.intro/",
+	"title": "Understand Cocktail Cloud",
+	"tags": [],
+	"description": "",
+	"content": " What is Cocktail? Cocktail is an all-in-one container management platform.\nAs the use of cloud computing became widespread, there has been a growing demand for infrastructure and application service management. This can be attributed to the limitations in utilizing the advantages of the cloud with past development and operations methods.\nIn the applications segment in particular, there is growing demand for automation, efficiency, and integrated management, including continuous integration and delivery/deployment (CI/CD), migration, and multi/hybrid cloud computing.\nIn this context, the proliferation of container technology can be considered a natural evolution. Many companies have adopted container technology, and the trend is only continuing. (Reference: http://redmonk.com/fryan/2017/09/10/cloud-native-technologies-in-the-fortune-100)\nAs a technology that packages applications or services into independent, executable units, containers provide the same development and operational experience regardless of infrastructure. Therefore, cloud management can be standardized, and development and operational efforts can be reduced from infrastructure to services. Notably, containers provide the advantage of managing a multi/hybrid cloud under a cohesive environment.\nCocktail applies the advantages of containers to cloud management to streamline development and operations, providing a platform for implementing a single or multi/hybrid cloud strategy.\nThe main features of Cocktail are as follows:\n Pipeline automation from building to deployment and updating from code. Workload-oriented (service) container management: Packaging, lifecycles, resources, etc. Full-stack monitoring: Status and resource monitoring from infrastructure to containers; Alerts management. Multi/hybrid cluster provisioning and management: Bare-metal, private/public cloud.  "
+},
+{
+	"uri": "http://acornapps.github.io/cocktail-manual-3.3.0-public/en/",
+	"title": "Cocktial Cloud Manual",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://acornapps.github.io/cocktail-manual-3.3.0-public/en/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://acornapps.github.io/cocktail-manual-3.3.0-public/en/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
